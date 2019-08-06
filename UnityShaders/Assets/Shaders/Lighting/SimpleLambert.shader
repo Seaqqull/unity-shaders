@@ -1,4 +1,4 @@
-﻿Shader "Custom/Lightning/Diffuse"
+﻿Shader "Custom/Lighting/Diffuse"
 {
     Properties
     {
@@ -19,7 +19,7 @@
             half4 c;
             half NdotL = dot(s.Normal, lightDir);
 
-            c.rgb = s.Albedo * _LightColor0.rgb * (NdotL * atten);
+            c.rgb = s.Albedo * _LightColor0.rgb * NdotL * atten;
             c.a = s.Alpha;
 
             return c;

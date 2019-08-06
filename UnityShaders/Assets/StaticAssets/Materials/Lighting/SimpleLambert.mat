@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Diffuse
+  m_Name: SimpleLambert
   m_Shader: {fileID: 4800000, guid: 9e123e13b5d761846ae612eeca567ecf, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
