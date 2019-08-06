@@ -1,8 +1,11 @@
-﻿Shader "Custom/DiffuseOnly"
+﻿Shader "Custom/Surface/TextureScrolling"
 {
     Properties
     {
         _Color ("Color", Color) = (1,1,1,1)
+        _MainTex ("Albedo (RGB)", 2D) = "white" {}
+        _ScrollXSpeed("X scroll speed", Range(0, 10)) = 1
+        _ScrollYSpeed("Y scroll speed", Range(0, 10)) = 1
     }
     SubShader
     {
@@ -10,18 +13,21 @@
         LOD 200
 
         CGPROGRAM
-        // Lambert based lighting model, and enable shadows on all light types
+        // Physically based Standard lighting model, and enable shadows on all light types
         #pragma surface surf Lambert fullforwardshadows
 
         // Use shader model 3.0 target, to get nicer looking lighting
         #pragma target 3.0
 
+        sampler2D _MainTex;
 
         struct Input
         {
             float2 uv_MainTex;
         };
-
+        
+        fixed _ScrollXSpeed;
+        fixed _ScrollYSpeed;
         fixed4 _Color;
 
         // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
@@ -33,7 +39,20 @@
 
         void surf (Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = _Color.rgb;
+            fixed2 scrolledUV = IN.uv_MainTex;
+
+            // uv time scaled values
+            fixed xScroll = _ScrollXSpeed * _Time;
+            fixed yScroll = _ScrollYSpeed * _Time;
+
+            // Apply uv offset
+            scrolledUV += fixed2(xScroll, yScroll);
+
+            // Albedo comes from a texture tinted by color
+            fixed4 c = tex2D (_MainTex, scrolledUV) * _Color;
+
+            o.Albedo = c.rgb;
+            o.Alpha = c.a;
         }
         ENDCG
     }
