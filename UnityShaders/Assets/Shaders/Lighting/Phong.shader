@@ -14,11 +14,12 @@
 
         CGPROGRAM
 
-        float4 _SpecularColor;
-        float _SpecularPower;
-        sampler2D _MainTex;
         float4 _Color;
-        // Physically based Standard lighting model, and enable shadows on all light types
+        sampler2D _MainTex;
+        float _SpecularPower;
+        float4 _SpecularColor;
+        
+        // Phong based lighting model
         #pragma surface surf Phong
 
         fixed4 LightingPhong(SurfaceOutput o, fixed3 lightDir, half3 viewDir, fixed atten)
@@ -38,7 +39,7 @@
 
             return c;
         }
-        // Use shader model 3.0 target, to get nicer looking lighting
+        
         #pragma target 3.0
 
         struct Input
@@ -50,12 +51,11 @@
         // See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
         // #pragma instancing_options assumeuniformscaling
         UNITY_INSTANCING_BUFFER_START(Props)
-            // put more per-instance properties here
+ 
         UNITY_INSTANCING_BUFFER_END(Props)
 
         void surf (Input IN, inout SurfaceOutput o)
         {
-            // Albedo comes from a texture tinted by color
             o.Albedo = tex2D(_MainTex, IN.uv_MainTex).rgb * _Color;
         }
         ENDCG
