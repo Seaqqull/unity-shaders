@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Rock
+  m_Shader: {fileID: -6465566751694194690, guid: 51bec534c29d88d4dbd530bdc40a0141,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_3029B24E:
+        m_Texture: {fileID: 2800000, guid: 038bfbf2170b6214cb862a92b5649ac3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_3AE9D3BC:
+        m_Texture: {fileID: 2800000, guid: 6261b33eb6065bc4cb302d44f424c184, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_660A0FA9:
+        m_Texture: {fileID: 2800000, guid: 07e22c468366dea44b68fcddb13a3773, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_6649DE4F:
+        m_Texture: {fileID: 2800000, guid: 99b7366feb165b14194663e529d98660, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F76721B:
+        m_Texture: {fileID: 2800000, guid: 3bb52cdcfb1b02940b2696501eee8d55, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_D0BCA7AF:
+        m_Texture: {fileID: 2800000, guid: e484ffd611fa8074ab804c95074b3f6e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_133403F2: 1
+    - Vector1_14E87DA2: 1
+    - Vector1_44870810: 1.3
+    - Vector1_6B68D39B: 1
+    - Vector1_6DC2474D: 9
+    - Vector1_BC6A1FFC: 1
+    - Vector1_E84D128E: 1
+    - Vector1_EEA4DB06: 0
+    m_Colors:
+    - Vector3_F0010757: {r: 0, g: 1, b: 0, a: 0}
