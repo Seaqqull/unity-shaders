@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FresnelShine
+  m_Shader: {fileID: -6465566751694194690, guid: 20943ac5682a1924c9d03db9b1180b2c,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_31C2570E:
+        m_Texture: {fileID: 2800000, guid: 17e18de79bd808f4e8ef0e4cfa341dd1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_62F2B6AE:
+        m_Texture: {fileID: 2800000, guid: 513b85fc89d2cbe4a937fbe0fed5b4ed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_86C314D2:
+        m_Texture: {fileID: 2800000, guid: cb504f252d140ad4ea38f392e0bea423, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Boolean_D1A88FD1: 0
+    - Vector1_32506F52: 0.9
+    - Vector1_7F8B46C3: 5
+    - Vector1_950335C5: 0.5
+    - Vector1_A7570BD6: 2
+    m_Colors:
+    - Color_C87BEC88: {r: 0, g: 1.98415, b: 2.264151, a: 0}
