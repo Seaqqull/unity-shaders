@@ -35,6 +35,7 @@ Material:
     m_Floats:
     - Boolean_D1A88FD1: 1
     - Vector1_32506F52: 0.9
+    - Vector1_337B4A62: 1
     - Vector1_7F8B46C3: 5
     - Vector1_950335C5: 0.5
     m_Colors:
