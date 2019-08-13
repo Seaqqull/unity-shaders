@@ -40,4 +40,5 @@ Material:
     - Vector1_950335C5: 0.5
     - Vector1_DA35B9D: 0.5
     m_Colors:
+    - Color_5A3B5193: {r: 1, g: 0, b: 0, a: 0}
     - Color_C87BEC88: {r: 0, g: 1.98415, b: 2.264151, a: 0}
