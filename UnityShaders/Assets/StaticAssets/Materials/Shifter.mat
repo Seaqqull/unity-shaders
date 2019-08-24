@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shifter
+  m_Shader: {fileID: -6465566751694194690, guid: 38b781aa59f4af04f8b4ef494ec1d10f,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - Vector1_1A988366: 0
+    - Vector1_31024F3E: 0.05
+    - Vector1_606505EA: 20
+    - Vector1_614411BB: 1
+    - Vector1_74308089: 2
+    - Vector1_89174422: 20
+    - Vector1_A0E8E3E9: 0.5
+    - Vector1_CF107F0D: 0.2
+    - Vector1_D03176F1: 2
+    - Vector1_E16F8F9F: 0
+    m_Colors:
+    - Color_1E334037: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_1AE8D506: {r: 0, g: -0.5, b: 0, a: 0}
+    - Vector2_1E000348: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_E42EBDB8: {r: 0, g: 1, b: 0, a: 0}
+    - Vector3_45E6D7D9: {r: 0, g: 0, b: 0, a: 0}

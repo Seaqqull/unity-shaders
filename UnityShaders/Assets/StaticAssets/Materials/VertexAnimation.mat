@@ -26,4 +26,5 @@ Material:
     - Vector1_AFC1A992: 1
     - Vector1_B03BCA52: 10
     m_Colors:
+    - Vector3_173DC113: {r: 1, g: 0, b: 0, a: 0}
     - Vector3_586EE524: {r: 0.32, g: 0, b: 0, a: 0}
